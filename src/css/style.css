@@ -673,4 +673,46 @@ a {
   .ig-piloto{
     border: solid 1px;
   }
+
+
+/* ================================================= Página Solução ================================================= */
+
+#h1soluc{
+    margin-left: 1%;
+    margin-top: 14.5%;
+    text-align: start;
+    text-decoration: underline red;
+  }
   
+  .solucao{
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: start;
+  }
+  
+  .solucao ol{
+    margin-left: 2%;
+    margin-right: 1%;
+  }
+  
+  .solucao ol li{
+    margin-top: 1%;
+  }
+  
+  .solucao p{
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+  }
+  
+  .solucao h2{
+    margin-left: 1%;
+    text-align: center;
+    text-decoration: underline red;
+  }
+  
+  #solu-final{
+    text-align: center;
+    margin-top: 3%;
+  }
