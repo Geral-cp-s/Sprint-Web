@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+   <html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== LIVRARIA DE ICONES ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!--=============== CHAMA O CSS ===============-->
+      <link rel="stylesheet" href="src/css/style.css">
+      <title>G4Tech</title>
+   </head>
+   <body>
+      <!--=============== HEADER ===============-->
+      <header class="header">
+         <nav class="nav container">
+            <div class="nav__data">
+               <a href="index.html" class="nav__logo">
+                  <img src="./src/img/G4_Tech-branco.png" alt="">
+               </a>
+               
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="index.html" class="nav__link">Home</a></li>
+
+                  <li><a href="quem_somos.html" class="nav__link">Quem somos</a></li>
+
+                  <!--=============== MENU SUSPENSO 1 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Equipes <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="mahindra.html" class="dropdown__link">
+                              Mahindra Racing
+                           </a>                          
+                        </li>
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              Porsche
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              Neon McLaren
+                           </a>
+                        </li>
+                        <li>
+                           <a href="outras_equipes.html" class="dropdown__link">
+                              Outras equipes
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  <!--=============== MENU SUSPENSO 2 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        <p>Fórmula-E</p><i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="regras.html" class="dropdown__link">
+                              Regras
+                           </a>                          
+                        </li>
+                        <li>
+                           <a href="comparativos.html" class="dropdown__link">
+                              Comparativos
+                           </a>
+                        </li>
+                        <li>
+                           <a href="problema.html" class="dropdown__link">
+                              O problema
+                           </a>
+                        </li>
+                        <li>
+                           <a href="solucao.html" class="dropdown__link">
+                              A solução
+                           </a>
+                        </li>
+                     </ul>
+
+                  <!--=============== NAV MENU ===============-->
+                  <li><a href="pistas.html" class="nav__link">Pistas</a></li>
+
+                  <!--=============== MENU SUSPENSO 3 ===============-->
+                  <li class="dropdown__item">
+                  <div class="nav__link">
+                     Usuário <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                  </div>
+                  <ul class="dropdown__menu">
+                     <li>
+                        <li>
+                           <a href="acesso.html" class="dropdown__link">
+                              Login
+                           </a>                          
+                        </li>                         
+                     </li>
+                     <li>
+                        <a href="registre.html" class="dropdown__link">
+                           Registre-se
+                        </a>
+                     </li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <main>
+        <section class="team-info">
+           <img id="logo" src="./src/img/mahindra.png" alt="">
+           <p><img id="bandeira" src="./src/img/bandeira/londres.png" alt="Banbury, REINO UNIDO"> Banbury, REINO UNIDO</p>
+        </section>
+           <img src="./src/img/mahindra/carro.png" alt="Mahindra Car" class="car-image" onclick="openModal('modal11')"> 
+           <!-- Modal 11 -->
+              <div id="modal11" class="modal">
+                 <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal11')">&times;</span>
+                    <h2>Informações do carro</h2>
+                    <img src="./src/img/mahindra/carro.png" alt="">
+                    <div class="detail"><span>Motor ------ </span> <span class="dois">Mahindra M7Electro</span></div>
+                    <div class="detail"><span>Chassi ------</span> <span class="dois">Spark SRT05e</span></div>
+                    <div class="detail"><span>Carro da equipe ------</span> <span class="dois">Mahindra M10Elétrico</span></div>
+                    <div class="detail"><span>Peso ------</span> <span class="dois">900kg</span></div>
+                    <div class="detail"><span>Aceleração (0-100 km/h) ------</span> <span class="dois">0,8 segundos</span></div>
+                 </div>
+              </div>
+        <section class="team-info">
+           <div class="team-details">
+               <div class="detail"><span>Piloto de reserva</span> <span class="dois">Jordan King, Kush Maini</span></div>
+               <div class="detail"><span>Team Manufacturer</span> <span class="dois">Mahindra</span></div>
+               <div class="detail"><span>Team Car</span> <span class="dois">Mahindra M10Electro</span></div>
+               <div class="detail"><span>Principal</span> <span class="dois">Frederic Bertrand</span></div>
+           </div>
+       </section>
+
+       <section class="quem-e">
+        <h2>Quem é a Mahindra?</h2>
+        <p>Mahindra Racing é uma equipe de automobilismo da Índia, parte da Mahindra & Mahindra. Foi a primeira equipe indiana no Campeonato do Mundo FIM MotoGP em 2011 e competiu em campeonatos italianos e internacionais subsequentes. Em 2014, tornou-se uma das dez fundadoras do Campeonato de Fórmula E da FIA, sendo a única equipe indiana na competição.</p>
+    </section>
+       
+       <section class="statistics">
+           <h2>Estatísticas da temporada</h2>
+           <div class="stats" onmouseover="medidas()">
+               <div class="stat">                  
+                 <span>Classificação</span>
+                 <span id="contador1"></span>
+              </div>
+               <div class="stat">
+                 <span id="contador2"></span>
+                 <span>Vitórias</span>
+                 <span>0</span>
+              </div>
+              <div class="stat">
+                 <span id="contador3"></span>
+                 <span>Pódios</span>
+                 <span>0</span>
+              </div>
+           </div>
+       </section>
+       
+       <section class="drivers">
+           <div class="driver" onclick="openModal('modal12')">
+               <img src="./src/img/mahindra/edoardo.png" alt="Edoardo Mortara">
+               <p class="name">Edoardo Mortara</p>
+               <p class="name">37 anos</p>
+               <p class="number">48</p>
+               <p class="country"><img src="./src/img/bandeira/suica.jpg" alt=" Bandeira da Suiça"> Suiça</p>
+           </div>
+           <!-- Modal 12 -->
+           <div id="modal12" class="modal">
+              <div class="modal-content">
+                 <span class="close" onclick="closeModal('modal12')">&times;</span>
+                 <h2>Edoardo Mortara</h2>
+                 <img src="./src/img/mahindra/edoardo.png" alt="">
+                 <h3>Estatísticas da temporada</h3>
+                 <div class="stat">
+                    <span class="label">Classificação:</span>
+                    <span class="value">21º</span>|
+                    <span class="label">Vitórias:</span>
+                    <span class="value">0</span>|
+                    <span class="label">Pódios:</span>
+                    <span class="value">0</span>
+                </div>
+                <h3>Dados da carreira</h3>
+                <div class="stat">
+                    <span class="label">Corridas que particiou:</span>
+                    <span class="value">87</span>|
+                    <span class="label">Vitórias:</span>
+                    <span class="value">6</span>|
+                    <span class="label">Pódios:</span>
+                    <span class="value">13</span>|<br>
+                    <span class="label">Pole Position:</span>
+                    <span class="value">2</span>
+                </div>
+                <div class="stat">
+                    <div class="detail"><span>Títulos conquistados ------ </span> <span class="dois">0</span></div>
+                    <div class="detail"><span>Pontos no campeonato ------</span> <span class="dois">422</span></div>
+                    <div class="detail"><span>Voltas rápidas ------</span> <span class="dois">2</span></div>
+                    <div class="detail"><span>Voltas lideradas ------</span> <span class="dois">215</span></div>
+                </div>
+            </div>
+                 
+              </div>
+           </div>
+
+           <div class="driver" onclick="openModal('modal13')">
+               <img src="./src/img/mahindra/nyckdevries.png" alt="Nyck de Vries">
+               <p class="name">Nyck de Vries</p>
+               <p class="name">29 anos</p>
+               <p class="number">21</p>
+               <p class="country"><img src="./src/img/bandeira/holanda.jpg" alt="Bandeira da Holanda"> Holanda</p>
+           </div>
+           <!-- Modal 13 -->
+           <div id="modal13" class="modal">
+              <div class="modal-content">
+                 <span class="close" onclick="closeModal('modal13')">&times;</span>
+                 <h2>Informações do carro</h2>
+                 <img src="./src/img/mahindra/nyckdevries.png" alt="">
+                 <h3>Estatísticas da temporada</h3>
+                 <div class="stat">
+                    <span class="label">Classificação:</span>
+                    <span class="value">22º</span>|
+                    <span class="label">Vitórias:</span>
+                    <span class="value">0</span>|
+                    <span class="label">Pódios:</span>
+                    <span class="value">0</span>
+                </div>
+                <h3>Dados da carreira</h3>
+                <div class="stat">
+                    <span class="label">Corridas que particiou:</span>
+                    <span class="value">50</span>|
+                    <span class="label">Vitórias:</span>
+                    <span class="value">4</span>|
+                    <span class="label">Pódios:</span>
+                    <span class="value">8</span>|<br>
+                    <span class="label">Pole Position:</span>
+                    <span class="value">8</span>
+                </div>
+                <div class="stat">
+                    <div class="detail"><span>Títulos conquistados ------ </span> <span class="dois">1</span></div>
+                    <div class="detail"><span>Pontos no campeonato ------</span> <span class="dois">265</span></div>
+                    <div class="detail"><span>Voltas rápidas ------</span> <span class="dois">3</span></div>
+                    <div class="detail"><span>Voltas lideradas ------</span> <span class="dois">118</span></div>
+                </div>
+              </div>
+           </div>
+           
+       </section>
+
+        
+        
+     </main>
+     <footer>
+        <p>&copy; 2024 G4Tech. Todos os direitos reservados.</p>
+     </footer>
+
+     <!--=============== CHAMA O JAVASCRIPT ===============-->
+     <script src="src/js/script.js"></script>
+  </body>
+</html>
