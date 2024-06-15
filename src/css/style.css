@@ -605,3 +605,72 @@ a {
   .form-footer a:hover {
     text-decoration: underline;
   }
+
+
+/* ================================================ Página Perfil ===================================================*/
+
+#h2perfil{
+    margin-top: 85px;
+    font-size: 3rem;
+  }
+  
+  /*Config. detalhes*/
+  .perfil-details {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .perfil-details .detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .perfil-details h2{
+    margin-bottom: 2%;
+    text-align: center  ;
+  }
+  
+  .perfil-details span{
+    font-size: 1.2rem;
+  }
+  
+  .um{
+    font-weight: 800;
+  }
+  
+  .preferencias {
+      display: flex;
+      flex-direction: column;
+  }
+  .preferencias img {
+      width: 60px;
+      height: 60px;
+      border-radius: 5px;
+  }
+  .preferencias div {
+      display: flex;
+      align-items: center;
+  }
+  .preferencias div img {
+      margin-right: 10px;
+  }
+  .preferencias div span {
+      margin-right: 20px;
+  }
+  .preferencias button {
+      background-color: #eee;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  .preferencias button:hover {
+      background-color: #ddd;
+  }
+  
+  .ig-piloto{
+    border: solid 1px;
+  }
+  
