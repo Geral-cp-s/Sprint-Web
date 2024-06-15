@@ -716,3 +716,42 @@ a {
     text-align: center;
     margin-top: 3%;
   }
+
+
+/* ================================================= Página Problema =================================================*/
+
+#h1prob{
+    margin-left: 1%;
+    margin-top: 14.5%;
+    text-align: start;
+    text-decoration: underline red;
+  }
+  
+  .problema{
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: start;
+  }
+  
+  .problema p{
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+  }
+  
+  .problema h2{
+    margin-left: 1%;
+    text-align: center;
+    text-decoration: underline red;
+  }
+  
+  .problema h3{
+    margin-top: 3%;
+    text-align: center;
+    text-decoration: underline red;
+  }
+  
+  .problema ul{
+    margin-top: 2%;
+  }
