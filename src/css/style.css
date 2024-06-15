@@ -1102,3 +1102,34 @@ a {
     margin-top: 1%;
   }
   
+
+/* ================================================= Página Quem Somos ============================================= */
+
+#h1quem{
+    margin-left: 1%;
+    margin-top: 14.5%;
+    text-align: start;
+    text-decoration: underline red;
+  }
+  
+  .quem{
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .quem p{
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-size: 1.2rem;
+  }
+  
+  .quem img{
+    width: 100px;
+    border-radius: 20%;
+    margin: 2%;
+    border: black solid 2px;
+  }
