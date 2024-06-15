@@ -73,3 +73,23 @@ window.onclick = function(event) {
         }
     });
 }
+
+/* =============================================== Função contagem ================================================= */
+
+
+function medidas(){
+    const contador1 =document.getElementById("contador1");
+    let valor1=0;
+
+    //setInterval- ele define um derterminado intervalo de tempo
+
+    let tempo1 = setInterval(()=>{
+        valor1 +=1;
+        contador1.innerHTML = `+${valor1}`;
+
+        if(valor1 == 11){
+            //limpa o intervalo de tempo
+            clearInterval(tempo1);
+        }
+    })
+}

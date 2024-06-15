@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+   <html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== LIVRARIA DE ICONES ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!--=============== CHAMA O CSS ===============-->
+      <link rel="stylesheet" href="src/css/style.css">
+      <title>G4Tech</title>
+   </head>
+   <body>
+      <!--=============== HEADER ===============-->
+      <header class="header">
+         <nav class="nav container">
+            <div class="nav__data">
+               <a href="index.html" class="nav__logo">
+                  <img src="./src/img/G4_Tech-branco.png" alt="">
+               </a>
+               
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="index.html" class="nav__link">Home</a></li>
+
+                  <li><a href="quem_somos.html" class="nav__link">Quem somos</a></li>
+
+                  <!--=============== MENU SUSPENSO 1 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Equipes <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="mahindra.html" class="dropdown__link">
+                              Mahindra Racing
+                           </a>                          
+                        </li>
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              Porsche
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              Neon McLaren
+                           </a>
+                        </li>
+                        <li>
+                           <a href="outras_equipes.html" class="dropdown__link">
+                              Outras equipes
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  <!--=============== MENU SUSPENSO 2 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        <p>Fórmula-E</p><i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="regras.html" class="dropdown__link">
+                              Regras
+                           </a>                          
+                        </li>
+                        <li>
+                           <a href="comparativos.html" class="dropdown__link">
+                              Comparativos
+                           </a>
+                        </li>
+                        <li>
+                           <a href="problema.html" class="dropdown__link">
+                              O problema
+                           </a>
+                        </li>
+                        <li>
+                           <a href="solucao.html" class="dropdown__link">
+                              A solução
+                           </a>
+                        </li>
+                     </ul>
+
+                  <!--=============== NAV MENU ===============-->
+                  <li><a href="pistas.html" class="nav__link">Pistas</a></li>
+
+                  <!--=============== MENU SUSPENSO 3 ===============-->
+                  <li class="dropdown__item">
+                  <div class="nav__link">
+                     Usuário <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                  </div>
+                  <ul class="dropdown__menu">
+                     <li>
+                        <li>
+                           <a href="acesso.html" class="dropdown__link">
+                              Login
+                           </a>                          
+                        </li>                         
+                     </li>
+                     <li>
+                        <a href="registre.html" class="dropdown__link">
+                           Registre-se
+                        </a>
+                     </li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <main>
+        <div class="card-container">
+           <!-- Card 1 -->
+           <div class="card" onclick="openModal('modal1')">
+               <div class="date-section">
+                   <span class="day">13</span>
+                   <span class="month">JAN</span>
+               </div>
+               <div class="details-section">
+                   <div class="flag-section">
+                       <img src="./src/img/bandeira/mex.png" alt="Mexico Flag">
+                       <span>CIDADE DO MÉXICO</span>
+                   </div>
+               </div>
+               <div class="image-section">
+                   <img src="./src/img/pistas/mexico.jpg" alt="Event Image">
+               </div>
+           </div>
+           <!-- Modal 1 -->
+           <div id="modal1" class="modal">
+               <div class="modal-content"> 
+                   <span class="close" onclick="closeModal('modal1')">&times;</span>
+                   <h2>Detalhes do Evento</h2>
+                   <img src="./src/img/circuito/mex.PNG" alt="">
+                   <p class="legenda">AUTÓDROMO HERMANOS RODRÍGUEZ</p><br>
+                   <p class="pmodal">ROUND: 1</p>
+                   <p class="pmodal">- O traçado da pista apresenta uma mistura de retas longas e rápidas e uma seção técnica interna através do lendário estádio Foro Sol.</p>
+                   <p class="pmodal">- 2606 metros de extensão e 19 curvas.</p>
+                   <p class="pmodal">- Modo ataque se localiza entre as curvas 11 e 12.</p>
+                   <p class="pmodal"><strong>VENCEDOR ROUND 1:</strong></p>
+                   <p class="pmodal">1º - PASCAL WEHRLEIN - <strong>TAG HEUER PORSCHE FORMULA E TEAM</strong></p>
+
+               </div>
+           </div>
+           <!-- Repeat for other cards -->
+           <!-- Card 2 -->
+           <div class="card" onclick="openModal('modal2')">
+               <div class="date-section">
+                   <span class="day">26/27</span>
+                   <span class="month">JAN</span>
+               </div>
+               <div class="details-section">
+                   <div class="flag-section">
+                       <img src="./src/img/bandeira/arabia.png" alt="Mexico Flag">
+                       <span>DIRIYAH</span>
+                   </div>
+               </div>
+               <div class="image-section">
+                   <img src="./src/img/pistas/diriyah.jpg" alt="Event Image">
+               </div>
+           </div>
+           <!-- Modal 2 -->
+           <div id="modal2" class="modal">
+               <div class="modal-content">
+                   <span class="close" onclick="closeModal('modal2')">&times;</span>
+                   <h2>Detalhes do Evento</h2>
+                   <img src="./src/img/circuito/arabia.PNG" alt="">
+                   <p class="legenda">CIRCUITO DE RUA DIRIYAH</p><br>
+                   <p class="pmodal">ROUND: 2 e 3</p>
+                   <p class="pmodal">- 2.495 km de comprimento, setores predominantes de média velocidade e um layout com muitas curvas e trechos técnicos.</p>                    
+                   <p class="pmodal">- Modo ataque se localiza na curva 19.</p>
+                   <p class="pmodal"><strong>VENCEDOR ROUND 2:</strong></p>
+                   <p class="pmodal">1º - JAKE DENNIS  - <strong>ANDRETTI FORMULA E</strong></p>
+                   <p class="pmodal"><strong>VENCEDOR ROUND 3:</strong></p>
+                   <p class="pmodal">1º - NICK CASSIDY - <strong>JAGUAR TCS RACING</strong></p>
+               </div>
+           </div>
+           <!-- Card 3 -->
+           <div class="card" onclick="openModal('modal3')">
+               <div class="date-section">
+                   <span class="day">16</span>
+                   <span class="month">MAR</span>
+               </div>
+               <div class="details-section">
+                   <div class="flag-section">
+                       <img src="./src/img/bandeira/brasil.png" alt="Mexico Flag">
+                       <span>SÃO PAULO</span>
+                   </div>
+               </div>
+               <div class="image-section">
+                   <img src="./src/img/pistas/anhembi.jpg" alt="Event Image">
+               </div>
+           </div>
+           <!-- Modal 3 -->
+           <div id="modal3" class="modal">
+               <div class="modal-content">
+                   <span class="close" onclick="closeModal('modal3')">&times;</span>
+                   <h2>Detalhes do Evento</h2>
+                   <img src="./src/img/circuito/sp.PNG" alt="">
+                   <p class="legenda">CIRCUITO RUA DE SÃO PAULO</p><br>
+                   <p class="pmodal">ROUND: 4</p>
+                   <p class="pmodal">- 2.933 km de extensão e 11 curvas.</p>                    
+                   <p class="pmodal">- Com três longas retas conectadas por chicanes complicadas, curvas fechadas e curvas fechadas, o circuito de São Paulo é uma volta desafiadora para o pelotão.</p>
+                   <p class="pmodal"><strong>VENCEDOR ROUND 4:</strong></p>
+                   <p class="pmodal">1º - SAM BIRD - <strong>NEOM MCLAREN FORMULA E TEAM</strong></p>
+               </div>
+           </div>
+           <!-- Card 4 -->
+           <div class="card" onclick="openModal('modal4')">
+               <div class="date-section">
+                   <span class="day">30</span>
+                   <span class="month">MAR</span>
+               </div>
+               <div class="details-section">
+                   <div class="flag-section">
+                       <img src="./src/img/bandeira/japao.png" alt="Mexico Flag">
+                       <span>TOKYO</span>
+                   </div>
+               </div>
+               <div class="image-section">
+                   <img src="./src/img/pistas/japao.jpg" alt="Event Image">
+               </div>
+           </div>
+           <!-- Modal 4 -->
+           <div id="modal4" class="modal">
+               <div class="modal-content">
+                   <span class="close" onclick="closeModal('modal4')">&times;</span>
+                   <h2>Detalhes do Evento</h2>
+                   <img src="./src/img/circuito/jap.PNG" alt="">
+                   <p class="legenda">CIRCUITO DE RUA DE TÓQUIO</p><br>
+                   <p class="pmodal">ROUND: 5</p>
+                   <p class="pmodal">- 2,585 km de extensão e 20 curvas.</p>                    
+                   <p class="pmodal">- Modo Ataque ficará na parte externa da curva 4.</p>
+                   <p class="pmodal"><strong>VENCEDOR ROUND 5:</strong></p>
+                   <p class="pmodal">1º - MAXIMILIAN GÜNTHER - <strong>MASERATI MSG RACING</strong></p>
+               </div>
+           </div>
+           <!-- Card 5 -->
+           <div class="card" onclick="openModal('modal5')">
+               <div class="date-section">
+                   <span class="day">13/14</span>
+                   <span class="month">ABR</span>
+               </div>
+               <div class="details-section">
+                   <div class="flag-section">
+                       <img src="./src/img/bandeira/italia.png" alt="Mexico Flag">
+                       <span>MISANO</span>
+                   </div>
+               </div>
+               <div class="image-section">
+                   <img src="./src/img/pistas/misano.jpg" alt="Event Image">
+               </div>             
+           </div>
+           <!-- Modal 5 -->
+           <div id="modal5" class="modal">
+               <div class="modal-content">
+                   <span class="close" onclick="closeModal('modal5')">&times;</span>
+                   <h2>Detalhes do Evento</h2>
+                   <img src="./src/img/circuito/ita.PNG" alt="">
+                   <p class="legenda">CIRCUITO MUNDIAL DE MISANO MARCO SIMONCELLI</p><br>
+                   <p class="pmodal">ROUND: 6 e 7</p>
+                   <p class="pmodal">- Traçado exclusivo da Fórmula E no Circuito Mundial Marco Simoncelli.</p>                    
+                   <p class="pmodal">- 3.381 km de extensão e 14 curvas.</p>
+                   <p class="pmodal">- Modo ataque se localiza na curva 12.</p>
+                   <p class="pmodal"><strong>VENCEDOR ROUND 6:</strong></p>
+                   <p class="pmodal">1º - OLIVER ROWLAND - <strong>NISSAN FORMULA E TEAM</strong></p>
+                   <p class="pmodal"><strong>VENCEDOR ROUND 7:</strong></p>
+                   <p class="pmodal">1º - PASCAL WEHRLEIN - <strong>TAG HEUER PORSCHE FORMULA E TEAM</strong></p>
+               </div>
+           </div>
+           <!-- Card 6 -->
+           <div class="card" onclick="openModal('modal6')">
+               <div class="date-section">
+                   <span class="day">27</span>
+                   <span class="month">ABR</span>
+               </div>
+               <div class="details-section">
+                   <div class="flag-section">
+                       <img src="./src/img/bandeira/monaco.png" alt="Mexico Flag">
+                       <span>MÓNACO</span>
+                   </div>
+               </div>
+               <div class="image-section">
+                   <img src="./src/img/pistas/monaco.jpeg" alt="Event Image">
+               </div>
+           </div>
+           <!-- Modal 6 -->
+           <div id="modal6" class="modal">
+               <div class="modal-content">
+                   <span class="close" onclick="closeModal('modal6')">&times;</span>
+                   <h2>Detalhes do Evento</h2>
+                   <img src="./src/img/circuito/monaco.png" alt="">
+                   <p class="legenda">CIRCUITO DE MÔNACO</p><br>
+                   <p class="pmodal">ROUND: 8</p>
+                   <p class="pmodal">- La Rascasse, Casino Square e Grand Hotel Hairpin - há poucas esquinas que evocam a lenda do automobilismo do que as ruas sinuosas que margeiam o circuito de Mônaco.</p>                    
+                   <p class="pmodal">- 3.337 km de extensão e 19 curvas.</p>
+                   <p class="pmodal">- Modo ataque se localiza na curva 4.</p>
+                   <p class="pmodal"><strong>VENCEDOR ROUND 8:</strong></p>
+                   <p class="pmodal">1º - MITCH EVANS - <strong>JAGUAR TCS RACING</strong></p>
+               </div>
+           </div>
+           <!-- Card 7 -->
+           <div class="card" onclick="openModal('modal7')">
+               <div class="date-section">
+                   <span class="day">11/12</span>
+                   <span class="month">MAI</span>
+               </div>
+               <div class="details-section">
+                   <div class="flag-section">
+                       <img src="./src/img/bandeira/alemanha.png" alt="Mexico Flag">
+                       <span>BERLIM</span>
+                   </div>
+               </div>
+               <div class="image-section">
+                   <img src="./src/img/pistas/berlim.jpg" alt="Event Image">
+               </div>
+           </div>
+           <!-- Modal 7 -->
+           <div id="modal7" class="modal">
+               <div class="modal-content">
+                   <span class="close" onclick="closeModal('modal7')">&times;</span>
+                   <h2>Detalhes do Evento</h2>
+                   <img src="./src/img/circuito/ale.png" alt="">
+                   <p class="legenda">AEROPORTO DE TEMPELHOF</p><br>
+                   <p class="pmodal">ROUND: 9 e 10</p>
+                   <p class="pmodal">- A reta de largada/chegada se move para o outro lado do pátio de concreto do histórico aeroporto de Tempelhof.</p>                    
+                   <p class="pmodal">- 2.585 km de extensão e 15 curvas.</p>
+                   <p class="pmodal"><strong>VENCEDOR ROUND 9:</strong></p>
+                   <p class="pmodal">1º - NICK CASSIDY - <strong>JAGUAR TCS RACING</strong></p>
+                   <p class="pmodal"><strong>VENCEDOR ROUND 10:</strong></p>
+                   <p class="pmodal">1º - ANTÓNIO FÉLIX DA COSTA - <strong>TAG HEUER PORSCHE FORMULA E TEAM</strong></p>
+               </div>
+           </div>
+           <!-- Card 8 -->
+           <div class="card" onclick="openModal('modal8')">
+               <div class="date-section">
+                   <span class="day">25/26</span>
+                   <span class="month">MAI</span>
+               </div>
+               <div class="details-section">
+                   <div class="flag-section">
+                       <img src="./src/img/bandeira/china.png" alt="Mexico Flag">
+                       <span>XANGAI</span>
+                   </div>
+               </div>
+               <div class="image-section">
+                   <img src="./src/img/pistas/xangai.jpg" alt="Event Image">
+               </div>
+           </div>
+           <!-- Modal 8 -->
+           <div id="modal8" class="modal">
+               <div class="modal-content">
+                   <span class="close" onclick="closeModal('modal8')">&times;</span>
+                   <h2>Detalhes do Evento</h2>
+                   <img src="./src/img/circuito/chi.png" alt="">
+                   <p class="legenda">CIRCUITO INTERNACIONAL DE XANGAI</p><br>
+                   <p class="pmodal">ROUND: 11 e 12</p>
+                   <p class="pmodal">- Quando visto de cima, o layout completo do circuito se inspira no símbolo chinês 'shang', que significa ascender.</p>                    
+                   <p class="pmodal">- 3.051 km de extensão e 12 curvas.</p>
+                   <p class="pmodal">- Modo ataque entre as curvas 9 e 10.</p>
+                   <p class="pmodal"><strong>VENCEDOR ROUND 11:</strong></p>
+                   <p class="pmodal">1º - MITCH EVANS - <strong>JAGUAR TCS RACING</strong></p>
+                   <p class="pmodal"><strong>VENCEDOR ROUND 12:</strong></p>
+                   <p class="pmodal">1º - ANTÓNIO FÉLIX DA COSTA - <strong>TAG HEUER PORSCHE FORMULA E TEAM</strong></p>
+               </div>
+           </div>
+           <!-- Card 9 -->
+           <div class="card" onclick="openModal('modal9')">
+               <div class="date-section">
+                   <span class="day">29/30</span>
+                   <span class="month">JUN</span>
+               </div>
+               <div class="details-section">
+                   <div class="flag-section">
+                       <img src="./src/img/bandeira/eua.png" alt="Mexico Flag">
+                       <span>PORTLAND</span>
+                   </div>
+               </div>
+               <div class="image-section">
+                   <img src="./src/img/pistas/portland.jpg" alt="Event Image">
+               </div>
+           </div>
+           <!-- Modal 9 -->
+           <div id="modal9" class="modal">
+               <div class="modal-content">
+                   <span class="close" onclick="closeModal('modal9')">&times;</span>
+                   <h2>Detalhes do Evento</h2>
+                   <img src="./src/img/circuito/eua.png" alt="">
+                   <p class="legenda">AUTÓDROMO INTERNACIONAL DE PORTLAND</p><br>
+                   <p class="pmodal">ROUND: 13 e 14</p>
+                   <p class="pmodal">- O circuito permanente é uma parada familiar para séries de automobilismo americanas, como a Indycar, e o traçado tem um histórico de proporcionar algumas batalhas acirradas.</p>                    
+                   <p class="pmodal">- 3.190 km de extensão e 12 curvas.</p>
+                   <p class="pmodal"><strong>VENCEDOR ROUND 13:</strong></p>
+                   <p class="pmodal">1º -  - <strong></strong></p>
+                   <p class="pmodal"><strong>VENCEDOR ROUND 14:</strong></p>
+                   <p class="pmodal">1º -  - <strong></strong></p>
+               </div>
+           </div>
+           <!-- Card 10 -->
+           <div class="card" onclick="openModal('modal10')">
+               <div class="date-section">
+                   <span class="day">20/21</span>
+                   <span class="month">JUL</span>
+               </div>
+               <div class="details-section">
+                   <div class="flag-section">
+                       <img src="./src/img/bandeira/londres.png" alt="Mexico Flag">
+                       <span>LONDRES</span>
+                   </div>
+               </div>
+               <div class="image-section">
+                   <img src="./src/img/pistas/londres.jpg" alt="Event Image">
+               </div>
+           </div>
+           <!-- Modal 10 -->
+           <div id="modal10" class="modal">
+               <div class="modal-content">
+                   <span class="close" onclick="closeModal('modal10')">&times;</span>
+                   <h2>Detalhes do Evento</h2>
+                   <img src="./src/img/circuito/ing.png" alt="">
+                   <p class="legenda">CIRCUITO EXCEL DE LONDRES</p><br>
+                   <p class="pmodal">ROUND: 15 e 16</p>
+                   <p class="pmodal">- O Circuito ExCeL de Londres começa em ambientes fechados em uma superfície lisa e sedosa que oferece muita aderência e, após uma rápida sucessão de curvas, o pelotão segue para fora.</p>                    
+                   <p class="pmodal">- 2.009 km de extensão e 20 curvas.</p>
+                   <p class="pmodal">- Modo ataque localizado entre as curvas 5 e 6 e as curvas 18 e 19.</p>
+                   <p class="pmodal"><strong>VENCEDOR ROUND 15:</strong></p>
+                   <p class="pmodal">1º - - <strong></strong></p>
+                   <p class="pmodal"><strong>VENCEDOR ROUND 16:</strong></p>
+                   <p class="pmodal">1º -  - <strong></strong></p>
+               </div>
+           </div>
+       </div>
+       
+     </main>
+     <footer>
+       <p>&copy; 2024 G4Tech. Todos os direitos reservados.</p>
+    </footer>
+
+     <!--=============== CHAMA O JAVASCRIPT ===============-->
+     <script src="src/js/script.js"></script>
+  </body>
+</html>
