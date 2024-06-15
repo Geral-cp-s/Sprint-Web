@@ -77,7 +77,7 @@ footer {
   padding: 1rem;
   bottom: 0;
   width: 100%;
-  margin-top: 3%;
+  margin-top: 50%;
 }
 
 .video-background {
@@ -429,3 +429,111 @@ a {
         max-width: 100%;
     }
 }
+
+
+/* ================================================== Página Login ==================================================== */
+#login {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .name input {
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #1e1c2e;
+    color: #b6b6b6;
+    margin-bottom: 15px;
+  }
+  
+  .email input {
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #1e1c2e;
+    color: #b6b6b6;
+  }
+  
+  .senha input {
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #1e1c2e;
+    color: #b6b6b6;
+    margin-top: 15px;
+  }
+  
+  .entrar input {
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(134, 243, 134);
+    color: #141414;
+  }
+  
+  #txt-crie p{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  input::placeholder {
+    color: #b6b6b6;
+  }
+  
+  h1 {
+    color: var(--black-color);
+    margin-bottom: 2%;
+  }
+  
+  .caixa {
+    margin-top: 65px;
+  }
+  
+  .caixa img {
+    width: 30%;
+    margin-top: 4%;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  #btn-login {
+    background: var(--black-color);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #btn-login:hover {
+    background: linear-gradient(45deg, #00ced1, #6a5acd);
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+  
+  #btn-login:active {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(0.95);
+  }
