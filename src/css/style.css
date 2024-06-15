@@ -755,3 +755,18 @@ a {
   .problema ul{
     margin-top: 2%;
   }
+
+
+/* ================================================= Página Comparativos ============================================= */
+
+#h1comp{
+    margin-left: 1%;
+    margin-top: 2%;
+    text-align: start;
+    text-decoration: underline red;
+  }
+  
+  .p-comp{
+    margin-left: 1%;
+    margin-right: 1%;
+  }
