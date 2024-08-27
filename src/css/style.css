@@ -1163,3 +1163,57 @@ a {
   font-weight: bold;
   color: #333;
 }
+
+
+  /* ================================================= MODAL DE ACESSO ============================================= */
+
+  .welcome-container {
+    display: none; /* O modal é inicialmente escondido */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.welcome-content-box {
+    position: relative;
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.welcome-close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.welcome-close-button:hover {
+    color: #000;
+}
+
+.welcome-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.welcome-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.welcome-link:hover {
+    text-decoration: underline;
+}

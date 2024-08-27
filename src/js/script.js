@@ -93,3 +93,26 @@ function medidas(){
         }
     })
 }
+
+  /* ================================================= MODAL DE ACESSO ============================================= */
+
+
+  window.onload = function() {
+    // Mostra o modal automaticamente ao carregar a página
+    var modal = document.getElementById("welcome-modal");
+    var closeBtn = document.getElementsByClassName("welcome-close-button")[0];
+
+    modal.style.display = "block";
+
+    // Fecha o modal quando o usuário clica no botão de fechar
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // Fecha o modal quando o usuário clica fora do conteúdo do modal
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+}
